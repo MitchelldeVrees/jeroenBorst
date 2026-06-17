@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://borsttegelwerken.nl";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.borsttegelwerken.nl";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

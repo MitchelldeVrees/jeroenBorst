@@ -290,7 +290,6 @@ export default function Home() {
       <section className="faq" aria-labelledby="faq-title">
         <div className="section-heading dark">
           <h2 id="faq-title">Veel gezocht</h2>
-          <span>SEO</span>
         </div>
         <div className="faq-list">
           {faqs.map((faq) => (
