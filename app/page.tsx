@@ -204,7 +204,9 @@ export default function Home() {
             </article>
           ))}
         </div>
+        
       </section>
+
 
       <section className="local-seo" aria-labelledby="local-seo-title">
         <div>
