@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const portfolio = [
   {
     src: "/media/12976562_225541691150902_844316762_n-768x768.jpg",
@@ -112,9 +114,12 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="logo" href="#top" aria-label="Borst Tegelwerken home">
-          <img
-            src="/media/Borst-logo-eind-selectie-300x195.jpg"
+          <Image
+            src="/logo.webp"
             alt="Borst Tegelwerken"
+            width={168}
+            height={109}
+            className="logo-image"
           />
         </a>
         <nav className="nav-links" aria-label="Hoofdnavigatie">
@@ -133,9 +138,13 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top">
-        <img
+        <Image
           src="/media/13423621_670148626458051_582358089_n-300x300.jpg"
           alt="Donkere douche met nis"
+          fill
+          priority
+          fetchPriority="high"
+          sizes="100vw"
           className="hero-image"
         />
         <div className="hero-overlay" />
@@ -238,11 +247,9 @@ export default function Home() {
         </div>
         <video
           src="/media/Borst.mp4"
-          poster="/media/13129930_1694004534185099_188031288_n-819x1024.jpg"
-          muted
-          loop
-          autoPlay
+          poster="/media/video-poster.webp"
           playsInline
+          preload="metadata"
           controls
         />
       </section>
@@ -255,7 +262,12 @@ export default function Home() {
         <div className="portfolio-grid">
           {portfolio.map((item) => (
             <figure className={item.className} key={item.src}>
-              <img src={item.src} alt={item.alt} />
+              <Image
+                src={item.src}
+                alt={item.alt}
+                fill
+                sizes="(max-width: 560px) 100vw, (max-width: 980px) 50vw, 25vw"
+              />
             </figure>
           ))}
         </div>
@@ -281,10 +293,14 @@ export default function Home() {
           </p>
           <strong>Jeroen Borst</strong>
         </div>
-        <img
-          src="/media/11699040_890040627756550_7730763422826034036_o-1024x1024.jpg"
-          alt="Jeroen Borst"
-        />
+        <div className="about-image">
+          <Image
+            src="/media/11699040_890040627756550_7730763422826034036_o-1024x1024.jpg"
+            alt="Jeroen Borst"
+            fill
+            sizes="(max-width: 980px) 100vw, 50vw"
+          />
+        </div>
       </section>
 
       <section className="faq" aria-labelledby="faq-title">
