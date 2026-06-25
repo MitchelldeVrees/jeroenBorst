@@ -64,11 +64,6 @@ const services = [
     title: "Vloeren",
     text: "Grootformaat, hexagon of klassiek: vlak en strak gelegd.",
   },
-  {
-    number: "04",
-    title: "Renovatie",
-    text: "Volledige verbouwing van begin tot eind, netjes opgeleverd.",
-  },
 ];
 
 const serviceAreas = ["Alkmaar", "Heiloo", "Bergen", "Langedijk", "Noord-Holland"];
@@ -218,8 +213,8 @@ export default function Home() {
         <div className="local-copy">
           <p>
             Zoek je een tegelzetter in Alkmaar voor strak tegelwerk? Borst
-            Tegelwerken helpt met badkamers, keukenwanden, vloeren en renovaties
-            waarbij de afwerking in de details zit.
+            Tegelwerken helpt met badkamers, keukenwanden en vloeren waarbij de
+            afwerking in de details zit.
           </p>
           <p>
             De werkzaamheden worden uitgevoerd door Jeroen Borst zelf. Dat houdt

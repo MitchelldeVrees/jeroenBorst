@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | Borst Tegelwerken",
   },
   description:
-    "Jeroen Borst is tegelzetter in Alkmaar voor badkamers, keukens, vloeren en renovaties. Bekijk het tegelwerk van Borst Tegelwerken.",
+    "Jeroen Borst is tegelzetter in Alkmaar voor badkamers, keukens en vloeren. Bekijk het tegelwerk van Borst Tegelwerken.",
   keywords: [
     "tegelzetter Alkmaar",
     "tegelwerken Alkmaar",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tegelzetter Alkmaar | Borst Tegelwerken",
     description:
-      "Portfolio van Jeroen Borst, tegelzetter in Alkmaar voor badkamers, keukens, vloeren en renovaties.",
+      "Portfolio van Jeroen Borst, tegelzetter in Alkmaar voor badkamers, keukens en vloeren.",
     url: siteUrl,
     siteName: "Borst Tegelwerken",
     locale: "nl_NL",
@@ -86,7 +86,7 @@ export default function RootLayout({
     image: `${siteUrl}/borst-google-logo.jpg`,
     email: "info@borsttegelwerken.nl",
     description:
-      "Jeroen Borst is tegelzetter in Alkmaar voor badkamers, keukens, vloeren en renovaties.",
+      "Jeroen Borst is tegelzetter in Alkmaar voor badkamers, keukens en vloeren.",
     priceRange: "$$",
     founder: {
       "@type": "Person",
@@ -105,7 +105,6 @@ export default function RootLayout({
       "badkamer betegelen",
       "keuken achterwand betegelen",
       "vloertegels leggen",
-      "tegelrenovatie",
     ],
     makesOffer: [
       {
@@ -151,7 +150,7 @@ export default function RootLayout({
     url: siteUrl,
     name: "Tegelzetter Alkmaar | Borst Tegelwerken",
     description:
-      "Portfolio van Jeroen Borst, tegelzetter in Alkmaar voor badkamers, keukens, vloeren en renovaties.",
+      "Portfolio van Jeroen Borst, tegelzetter in Alkmaar voor badkamers, keukens en vloeren.",
     isPartOf: {
       "@id": `${siteUrl}/#website`,
     },
